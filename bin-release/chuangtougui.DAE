@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>–°¥Ã‚¨</author>
+      <authoring_tool>COLLADAMax NextGen;  Version: 0.9.5;  Revision: 447;  Platform: Win32;  Configuration: Release Max2010</authoring_tool>
+      <source_data>file:///E:/xcw/myownJan/bed.max</source_data>
+    </contributor>
+    <created>2011-01-15T16:51:19</created>
+    <modified>2011-01-15T16:51:19</modified>
+    <unit name="millimeter" meter="0.001"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="ColorEffectR0G0B0">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>0 0 0 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent>
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ColorEffectR255G229B0">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <ambient>
+              <color>1 0.898039 0 1</color>
+            </ambient>
+            <diffuse>
+              <color>1 0.898039 0 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent>
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material__179">
+      <profile_COMMON>
+        <newparam sid="chuangtouguiCompleteMap_jpg-surface">
+          <surface type="2D">
+            <init_from>chuangtouguiCompleteMap_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="chuangtouguiCompleteMap_jpg-sampler">
+          <sampler2D>
+            <source>chuangtouguiCompleteMap_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="chuangtouguiCompleteMap_jpg-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="3dsMAX">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lexture_lock>1</ambient_diffuse_lexture_lock>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="ColorEffectR0G0B0-material" name="ColorEffectR0G0B0-material">
+      <instance_effect url="#ColorEffectR0G0B0"/>
+    </material>
+    <material id="ColorEffectR255G229B0-material" name="ColorEffectR255G229B0-material">
+      <instance_effect url="#ColorEffectR255G229B0"/>
+    </material>
+    <material id="Material__179-material" name="Material__179-material">
+      <instance_effect url="#Material__179"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Box02" name="Box02">
+      <mesh>
+        <source id="geom-Box02-positions">
+          <float_array id="geom-Box02-positions-array" count="24">-29.0137 -19.5678 0 29.0137 -19.5678 0 -29.0137 19.5678 0 29.0137 19.5678 0 -29.0137 -19.5678 33.8064 29.0137 -19.5678 33.8064 -29.0137 19.5678 33.8064 29.0137 19.5678 33.8064</float_array>
+          <technique_common>
+            <accessor source="#geom-Box02-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box02-normals">
+          <float_array id="geom-Box02-normals-array" count="60">0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box02-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Box02-map-channel1">
+          <float_array id="geom-Box02-map-channel1-array" count="60">0.51598 0.351249 0 0.01 0.351249 0 0.01 0.01 0 0.51598 0.01 0 0.51598 0.99 0 0.01 0.99 0 0.01 0.69522 0 0.51598 0.69522 0 0.881824 0.670624 0 0.540575 0.670624 0 0.540575 0.375845 0 0.881824 0.375845 0 0.51598 0.670624 0 0.01 0.670624 0 0.01 0.375845 0 0.51598 0.375845 0 0.881824 0.30478 0 0.540575 0.30478 0 0.540575 0.01 0 0.881824 0.01 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Box02-map-channel1-array" count="20" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Box02-vertices">
+          <input semantic="POSITION" source="#geom-Box02-positions"/>
+        </vertices>
+        <triangles material="Material__179_1" count="10">
+          <input semantic="VERTEX" source="#geom-Box02-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Box02-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Box02-map-channel1" offset="2" set="1"/>
+          <p>4 0 0 5 1 1 7 2 2 7 2 2 6 3 3 4 0 0 0 4 4 1 5 5 5 6 6 5 6 6 4 7 7 0 4 4 1 8 8 3 9 9 7 10 10 7 10 10 5 11 11 1 8 8 3 12 12 2 13 13 6 14 14 6 14 14 7 15 15 3 12 12 2 16 16 0 17 17 4 18 18 4 18 18 6 19 19 2 16 16</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_images>
+    <image id="chuangtouguiCompleteMap_jpg">
+      <init_from>chuangtouguiCompleteMap.jpg</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node id="node-Scene_Root" name="Scene_Root">
+        <node id="node-PhotometricLight01" name="PhotometricLight01">
+          <translate>-29.762 1829.25 1784.2</translate>
+          <instance_light url="#PhotometricLight01-light"/>
+        </node>
+        <node id="node-PhotometricLight02" name="PhotometricLight02">
+          <translate>8.48435 -1371.68 1784.2</translate>
+          <instance_light url="#PhotometricLight02-light"/>
+        </node>
+        <node id="node-PhotometricLight03" name="PhotometricLight03">
+          <translate>-1705.8 -958.15 1784.2</translate>
+          <instance_light url="#PhotometricLight03-light"/>
+        </node>
+        <node id="node-PhotometricLight04" name="PhotometricLight04">
+          <translate>1484.13 -919.904 1784.2</translate>
+          <instance_light url="#PhotometricLight04-light"/>
+        </node>
+        <node id="node-Box02" name="Box02">
+          <instance_geometry url="#geom-Box02">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="Material__179_1" target="#Material__179-material"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>
